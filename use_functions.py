@@ -16,7 +16,7 @@ print(add("hello", "goodbye"))
 print(add(3, 2))
 print(add.__doc__)  # I think there's another route to this.
 
-print(add(1, 2, 3)) # python mandates the right number of posional args
+# print(add(1, 2, 3)) # python mandates the right number of posional args
 
 # default value for args, variable length args, keyword args
 # lambdas
