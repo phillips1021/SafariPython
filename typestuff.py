@@ -39,3 +39,30 @@ from random import random as rnd
 # print(random())
 print(rnd())
 
+print(x, y, x == y, x != y)
+
+x += 10
+# x++ # NOPE not in Python!!
+print(x := 99)  # "walrus" operator is assignment, but is also an *expression*, value is what's assigned
+print(x)
+
+a = "Hello"
+x = "Hello"
+y = "He"
+print(x == y)  # delegates to __eq__
+y = y + "llo"
+print(x == y)
+
+print(x is y)
+print(x is a)
+
+b = "99"
+print(b == 99)
+print(b == str(99))
+print(int(b) == 99)
+
+# msg = input()
+msg = input("Hello, please enter text: ")
+# print("You entered", msg, sep="xxxx", end="ENDENDEND")
+print("You entered", msg, sep=" ", end="\n")  # single space and newline are defaults for these!
+print("Thanks, we're done")
