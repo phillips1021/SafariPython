@@ -53,8 +53,9 @@ print(addup(4,6))
 listostuff = [(1, 4), (2, 5), (3, 2), (4, 3)]
 print(listostuff)
 
-## FIX THIS SIMON!!!
-# listostuff.sort(lambda t: t[1])
+## -- for reasons I always forget, the sorting here is controlled using
+## a *keyword* argument, called key, not a positional argument, this now works...
+listostuff.sort(key=lambda t: t[1])
 print(listostuff)
 #  closures do what you would expect
 

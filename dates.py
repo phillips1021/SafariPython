@@ -28,8 +28,12 @@ class Oddball:
 class Holiday(Date, Oddball):
     def __init__(self, d, m, y, name):
         self.name = name
-        super().__init__(d, m, y)
-        super(Date).__init__()
+        # shorthand for "my first superclass" is simply super()
+        # super().__init__(d, m, y)
+        # "full form" is "class to left", self
+        super(Holiday, self).__init__(d, m, y)
+        # for the specific superclass "to the right of Date", i.e. Oddball
+        super(Date, self).__init__()
         print("Initializing a Holiday")
 
 d = Date(11, 4, 2022)
