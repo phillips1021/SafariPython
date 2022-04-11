@@ -1,4 +1,4 @@
-names = {"Fred": "Jones"}
+names = {"Fred": "Jones", "Alan": "Smith"}
 print(names)
 print(type(names))
 print(names["Fred"])
@@ -14,3 +14,17 @@ print("Alfred" in names)
 print(names["Alfred"])
 
 # comparison with Set
+
+vowels = { "a", "e", "i" }
+vowels.add("o")
+vowels.add("u")
+print(vowels)
+print(type(vowels))
+
+emptyset = set()
+print(emptyset)
+print(type(emptyset))
+
+what = {}
+print(type(what))
+
